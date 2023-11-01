@@ -19,10 +19,8 @@
     top: 0;
     margin: 0;
     transition: all 0.3s;
-
-    padding: 10px 20px;
     min-width: 250px;
-    width: 300px;
+    width: 340px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,10 +34,8 @@
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02); 
 }
 
-
-
 .menu__header{
-    margin: 15px 0;
+    margin: 25px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,12 +50,22 @@
 }
 
 .round-button{
+    transition: all .2s;
     height: 40px;
     width: 40px;
     border-radius: 100%;
     background-color: #FF3E79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     cursor: pointer;
+}
+
+.round-button:active{
+    transition: all .2s;
+    transform: scale(0.95);
+    background-color: #ff6191;
 }
 
 .round-button--menu{
@@ -75,11 +81,6 @@
     margin-left: 55px;
 }
 
-.round-button img{
-    height: 20px;
-    width: auto;
-}
-
 .menu__main{
     margin-top: 20px;
     display: grid;
@@ -90,9 +91,9 @@
 }
 
 .navigation-link{
-    margin-left: 10px;
+    margin-left: 30px;
     color: #1B1C21;
-
+    
     cursor: pointer;
     font-size: 16px;
     font-style: normal;
@@ -104,22 +105,21 @@
 
 .navigation-link--active{
     color: #7E7E82;
+    margin-left: 10px;
 }
 
 .navigation-link--active::before{
     content: '';
-
-    width: 2px;
-    height: 40px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    background-color: aqua;
-
-    position: absolute;
-    left: 5px;
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+    float: left;
+    margin-top: 2px;
+    margin-right: 16px;
 }
 
 .menu__footer{
+    margin: 10px 20px;
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -139,13 +139,22 @@
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px; 
+    transition: all .2s;
 }
+
+.mail:hover,
+ .phone-number:hover{
+    color: #41F6D7;
+    transition: all .2s;
+ }
 
 .phone-number{
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: -0.6px; 
+    letter-spacing: -0.6px;
+    cursor: pointer;
+    transition: all .2s; 
 }
 
 .language-settings{
