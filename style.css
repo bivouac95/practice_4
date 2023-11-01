@@ -71,7 +71,7 @@
 .round-button--menu{
     z-index: 99;
     position: relative;
-    top: 23.5px;
+    top: 25.5px;
     left: 15px;
 
 }
@@ -152,6 +152,11 @@
 
 .language-settings{
     height: 60px;
+}
+
+.language-settings__button:hover{
+    color: #FF3E79;
+    transition: all .3s;
 }
 
 .language-settings__button{
